@@ -6,9 +6,6 @@ body {
 }
 
 .header2 {
-    background-image: url(./assets/images/banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -19,13 +16,13 @@ body {
 
 }
 
-.tittle {
-    color: #F5F5F7;
+.title {
+    color: white;
     font-weight: normal;
     font-size: xx-large;
     position: relative;
-    z-index: 1;
-    bottom: 30px;
+    z-index: 2;
+    bottom: 130px;
 }
 
 .header1 {
