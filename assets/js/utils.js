@@ -18,19 +18,17 @@ class Product {
     }
 
     render() {
-       const image = document.createElement("img");
-       image.id = "div"+this.#id
-       image.classList.add("image");
-       image.src = this.#image;
-
-       div.appendChild(image);
-       return div;
+        const image = document.createElement("img");
+        image.id = "image" + this.#id;
+        image.src = this.#image;
+        image.classList.add("image")
+        return image;
     }
 
     addClickListener() {
-        const image = document.querySelector("#image"+this.#id);
+        const image = document.querySelector("#image" + this.#id);
         image.addEventListener("click", () => {
-            window.location = "/product.html?productId="+this.#id;
+            window.location = "/product.html?productId=" + this.#id;
         })
     }
 }
