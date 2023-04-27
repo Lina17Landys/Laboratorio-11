@@ -1,4 +1,4 @@
-import {traerTienda, Producto} from "./utils";
+import {traerTienda, Product} from "./utils";
 
 const render = async () => {
     const data = await traerTienda();

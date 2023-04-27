@@ -7,12 +7,12 @@ const traerTienda = async () => {
 
 traerTienda();
 
-class Producto {
-    #id = ""
-    #image = ""
+class Product {
+    #id = "";
+    #image = "";
 
 
-    constructor(id, imagen) {
+    constructor(id, image) {
         this.#id = id;
         this.#image = image;
     }
@@ -28,9 +28,12 @@ class Producto {
     }
 
     addClickListener() {
-        const div = document.querySelector("#div"+this.#id);
-        div.addEventListener("click", () => {
-         alert("click a"+this.#id);   
-    })
+        const image = document.querySelector("#image"+this.#id);
+        image.addEventListener("click", () => {
+            window.location = "/product.html?productId="+this.#id;
+        })
+    }
+    #actualizar(){
+        
     }
 }
