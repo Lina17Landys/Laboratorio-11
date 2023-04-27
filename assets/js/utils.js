@@ -33,7 +33,4 @@ class Product {
             window.location = "/product.html?productId="+this.#id;
         })
     }
-    #actualizar(){
-        
-    }
 }
