@@ -65,7 +65,7 @@ body {
     display: flex;
     position: relative;
     z-index: 1;
-    bottom: 400px;
+   top: 50px;
     left: 350px;
 }
 

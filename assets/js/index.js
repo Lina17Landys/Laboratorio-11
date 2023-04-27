@@ -1,8 +1,18 @@
-import {traerTienda, Product} from "./utils";
+import {getProducts, Product} from "./utils"
 
 const render = async () => {
-    const data = await traerTienda();
-    console.log(data);
+    const container = document.querySelector("#container");
+
+    const products = await getProducts();
+
+    for (const product of products) {
+        const newProduct = new Product(product.id, product.image);
+
+        const productComponent = newProduct.render();
+        container.appendChild(productComponent);
+
+        newProduct.addClickListener();
+    }
 }
 
 render();
