@@ -8,24 +8,29 @@ const traerTienda = async () => {
 traerTienda();
 
 class Producto {
-    imagen = ""
-    title = ""
+    #id = ""
+    #image = ""
 
 
-    constructor(image, title) {
-        this.imagen = image;
-        this.title = title;
+    constructor(id, imagen) {
+        this.#id = id;
+        this.#image = image;
     }
 
     render() {
-        const div = document.createElement('div')
-        const jpg = document.createElement('img')
-        const titulo = document.createElement('p')
-        jpg.src = this.imagen;
-        titulo.innerHTML = this.title;
+       const image = document.createElement("img");
+       image.id = "div"+this.#id
+       image.classList.add("image");
+       image.src = this.#image;
 
-        div.appendChild(jpg);
-        div.appendChild(titulo);
-        return div;
+       div.appendChild(image);
+       return div;
+    }
+
+    addClickListener() {
+        const div = document.querySelector("#div"+this.#id);
+        div.addEventListener("click", () => {
+         alert("click a"+this.#id);   
+    })
     }
 }
