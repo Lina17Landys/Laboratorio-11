@@ -42,42 +42,106 @@ body {
 .container-1 {
     background-color: #ffff;
     box-shadow: 2px 2px 2px 1px #bdbdc7;
-    width: 700px;
-    height: 500px;
+    width: 900px;
+    height: 630px;
     border-radius: 50px;
     margin-left: 25%;
     margin-top: 40px;
     z-index: 0;
-}
-
-.producto-img {
+    position: relative;
+  }
+  
+  .producto-img {
     width: 300px;
     height: 400px;
     margin-top: 30px;
     margin-left: 20px;
-}
-
-.info {
-   border: solid 2px #ceced5;
-   border-radius: 20px;
-    width: 300px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .info {
+    border-radius: 20px;
+    width: 350px;
     height: 400px;
     display: flex;
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
     z-index: 1;
-   top: 50px;
-    left: 350px;
-}
-
-button {
+    top: 50px;
+    left: 400px;
+    padding: 20px;
+  }
+  
+  .product {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .price {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .description {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .category {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  button {
     color: #F5F5F7;
     background-color: rgb(108, 181, 255);
     border: none;
-  border-radius: 10px;
-  margin-right: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    align-self: center;
+  }
+  
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: smaller;
+  }
+
+  #container img {
     width: 150px;
-    height: 30px;
-    position: relative;
-    top: 350px;
-    left: 10px;
-}
+    height: 150px;
+  }
+ 
+  .product {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .product h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .product p {
+    color: #212121;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
