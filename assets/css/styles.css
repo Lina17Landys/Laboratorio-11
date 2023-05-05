@@ -109,10 +109,17 @@ button {
 }
 
 #container {
+  width: 900px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   font-size: smaller;
+  margin: 0 auto;
+}
+
+#product-list {
+  margin-left: 90px;
+  margin-bottom: 30px;
 }
 
 #container img {
@@ -137,6 +144,13 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.product-container {
+  width: 200px;
+  height: 300px;
+  align-items: center;
+
 }
 
 .productoTitulo {
