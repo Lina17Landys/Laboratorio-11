@@ -29,6 +29,7 @@ const renderProduct = (product) => {
   container.innerHTML = `
     <div class="container-1">
       <div class="info">
+      <img id="imgProducto" src="">${product.image}
         <h1 class="product" id="nombreProducto">${product.title}</h1>
         <p class="price" id="precioProducto">$${product.price}</p>
         <p class="description" id="desProducto">${product.description}</p>

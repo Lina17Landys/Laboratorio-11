@@ -45,8 +45,7 @@ body {
     width: 900px;
     height: 630px;
     border-radius: 50px;
-    margin-left: 25%;
-    margin-top: 40px;
+    margin-left: 100px;
     z-index: 0;
     position: relative;
   }
