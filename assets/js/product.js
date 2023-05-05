@@ -8,8 +8,7 @@ const desProducto = urlParams.get('description');
 const cateProducto = urlParams.get('category');
 const image = urlParams.get('image');
 
-
-document.getElementById('imgProducto').innerText = imgProducto;
+document.getElementById('imgProducto').src = image;
 document.getElementById('nombreProducto').innerText = nombreProducto;
 document.getElementById('precioProducto').innerText = `$${precioProducto}`;
 document.getElementById('desProducto').innerText = desProducto;
