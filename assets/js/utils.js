@@ -24,19 +24,20 @@ fetch('https://fakestoreapi.com/products')
   })
   .catch(error => console.error(error));
 
-const renderProduct = (product) => {
-  const container = document.getElementById('container');
-  container.innerHTML = `
-    <div class="container-1">
-      <div class="info">
-      <img id="imgProducto" src="">${product.image}
-        <h1 class="product" id="nombreProducto">${product.title}</h1>
-        <p class="price" id="precioProducto">$${product.price}</p>
-        <p class="description" id="desProducto">${product.description}</p>
-        <p class="category" id="cateProducto">${product.category}</p>
-        <button>Buy now</button>
-        <button>Add to cart</button>
+  const renderProduct = (product) => {
+    const container = document.getElementById('container');
+    container.innerHTML = `
+      <div class="container-1">
+        <div class="info">
+          <img id="imgProducto" src="${product.image}">
+          <h1 class="product" id="nombreProducto">${product.title}</h1>
+          <p class="price" id="precioProducto">$${product.price}</p>
+          <p class="description" id="desProducto">${product.description}</p>
+          <p class="category" id="cateProducto">${product.category}</p>
+          <button>Buy now</button>
+          <button>Add to cart</button>
+        </div>
       </div>
-    </div>
-  `;
-};
+    `;
+  };
+  
