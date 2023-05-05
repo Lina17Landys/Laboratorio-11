@@ -104,8 +104,8 @@ body {
     border: none;
     border-radius: 10px;
     margin-top: 20px;
-    width: 250px;
-    height: 250px;
+    width: 450px;
+    height: 300px;
     align-self: center;
   }
   
@@ -144,7 +144,29 @@ body {
     font-size: 1rem;
   }
   
-  .imagenP {
-    width: 400px;
-    height: 290px;
+  #imgProducto {
+position: relative;
+z-index: 3;
+right: 300px;
+top: 200px;
+height: 250px;
+width: 200px;
+}
+
+
+  #nombreProducto {
+   position: relative;
+   z-index: 5;
+   bottom: 30px;
+    font-weight:normal;
+    font-size: medium;
+  }
+
+  #precioProducto {
+    margin-top: 20px;
+    font-size: small;
+  }
+
+  #desProducto {
+    font-size: medium;
   }
