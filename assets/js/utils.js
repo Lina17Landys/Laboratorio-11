@@ -7,7 +7,7 @@ fetch('https://fakestoreapi.com/products')
         <div class="product-container">
           <a class="product-link">
             <img src="${product.image}" alt="${product.title}" />
-            <h2>${product.title}</h2>
+            <h2 class="productoTitulo">${product.title}</h2>
             <p>$${product.price}</p>
           </a>
         </div>
